@@ -12,4 +12,13 @@ document.getElementById('user-number').innerHTML = userNumber;
 document.getElementById('pc-number').innerHTML = pcNumber;
 
 //Dichiarazione vincitore
+
+if(userNumber > pcNumber) {
+
+    alert('YOU WIN!');
+
+}else if(userNumber < pcNumber) {
+
+    alert('YOU LOST...');
+}
     
