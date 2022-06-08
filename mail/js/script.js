@@ -12,16 +12,14 @@ const logInButton = document.getElementById('log-in');
 logInButton.addEventListener('click',
 function() {
 
- //const userMail = document.getElementById ('user-mail').value;
-
- let userMail = alert("Accesso negato, non sei nella lista!")
+ const userMail = document.getElementById ('user-mail').value;
+ 
  //scorri la lista delle email
- //Se la mail è nella lista si apre un alert: accesso consentito
- //Se la mail non è nella lista si apre un alert: accesso negato
-
  for(let i = 0; i < mailIncluded.length; i++){
 
-     if (userMail === mailIncluded[i]) {
+    //Se la mail è nella lista si apre un alert: accesso consentito
+    if (userMail === mailIncluded[i]) {
+        
         alert("Ciao! accesso consentito!");
      }
     }
